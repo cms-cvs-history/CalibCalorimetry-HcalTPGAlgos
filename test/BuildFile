@@ -1,8 +1,0 @@
-<environment>
-  <use name=CalibCalorimetry/HcalTPGAlgos>
-
-  <bin file=HcalNominalTPGCoder_t.cc>
-  <use name=Geometry/HcalTowerAlgo>
-  </bin>
-</environment>
-
