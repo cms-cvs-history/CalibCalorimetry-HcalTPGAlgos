@@ -377,11 +377,11 @@ float HcaluLUTTPGCoder::getRcalib(const HcalDetId& id) const{
    return Rcalib[index]; 
 }
 int HcaluLUTTPGCoder::getLutGranularity(const HcalDetId& id) const{ 
+   int ietaAbs = id.ietaAbs();
    switch (id.subdet()) {
       case HcalBarrel:
          return 1;
       case HcalEndcap:
-         int ietaAbs = id.ietaAbs();
          if (ietaAbs < 18) return 1;
          else if (ietaAbs < 27) return 2;
          else return 5;
